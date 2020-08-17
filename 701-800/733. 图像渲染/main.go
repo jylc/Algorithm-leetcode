@@ -10,6 +10,7 @@ func floodFill(image [][]int, sr int, sc int, newColor int) [][]int {
 		return nil
 	}
 	val := image[sr][sc]
+	//val与newColor相同会造成dfs的死循环
 	if val == newColor {
 		return image
 	}
