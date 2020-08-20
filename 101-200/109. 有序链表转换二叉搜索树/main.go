@@ -33,6 +33,7 @@ func sortedListToBST(head *ListNode) *TreeNode {
 	return buildTree(head, nil)
 }
 
+//快慢指针寻找中位数
 func getMedian(left, right *ListNode) *ListNode {
 	fast, slow := left, left
 	for fast != right && fast.Next != right {
