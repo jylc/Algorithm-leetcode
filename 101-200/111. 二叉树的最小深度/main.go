@@ -23,6 +23,8 @@ func minDepth(root *TreeNode) int {
 	}
 	left := minDepth(root.Left)
 	right := minDepth(root.Right)
+	//添加这条语句是防止一个父节点只有一个子节点时返回节点数0
+	//例如[1 2]，父节点1有子节点2，最小深度不为1，而是2
 	if left == 0 || right == 0 {
 		return left + right + 1
 	}
