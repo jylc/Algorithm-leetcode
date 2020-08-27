@@ -34,12 +34,12 @@ func minContinueShoot(n, m int, balls []int) int {
 	flag := false
 	for j, i := 0, 0; j < n; j++ {
 		_, ok := visited[balls[j]]
-		if !ok && balls[j] != 0 {
+		if !ok && balls[j] != 0 { //射中球且此球第一次被射中才记录
 			cnt++
 		}
 		visited[balls[j]]++
 		if cnt == m {
-			flag = true
+			flag = true //有一次连续射击中射中了每种颜色的球
 			for balls[i] == 0 || visited[balls[i]] > 1 {
 				visited[balls[i]]--
 				i++

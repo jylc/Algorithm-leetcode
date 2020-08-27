@@ -16,12 +16,12 @@ func isSubsequence(s string, t string) bool {
 		}
 		j++
 	}
-	return i==lenS
+	return i == lenS
 }
 
-func main()  {
-	s:="abc"
-	t:="ahbgdc"
+func main() {
+	s := "abc"
+	t := "ahbgdc"
 	result := isSubsequence(s, t)
-	fmt.Println("result = ",result)
+	fmt.Println("result = ", result)
 }
