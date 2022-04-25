@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-//面试题 08.06. 汉诺塔问题
+//interview 08.06. 汉诺塔问题
 //https://leetcode-cn.com/problems/hanota-lcci/
 
 func hanota(A []int, B []int, C []int) []int {
@@ -29,9 +29,9 @@ func hanota(A []int, B []int, C []int) []int {
 }
 
 func main() {
-	A,B,C:=[]int{2,1,0},[]int{},[]int{}
-	C= hanota(A,B,C)
-	fmt.Println("A",A)
-	fmt.Println("B",B)
-	fmt.Println("C",C)
+	A, B, C := []int{2, 1, 0}, []int{}, []int{}
+	C = hanota(A, B, C)
+	fmt.Println("A", A)
+	fmt.Println("B", B)
+	fmt.Println("C", C)
 }

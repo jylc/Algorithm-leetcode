@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-//面试题 01.08. 零矩阵
+//interview 01.08. 零矩阵
 //https://leetcode-cn.com/problems/zero-matrix-lcci/
 func setZeroes(matrix [][]int) {
 	if len(matrix) == 0 {

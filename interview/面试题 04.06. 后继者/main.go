@@ -1,6 +1,6 @@
 package main
 
-//面试题 04.06. 后继者
+//interview 04.06. 后继者
 //https://leetcode-cn.com/problems/successor-lcci/
 /**
  * Definition for a binary tree node.

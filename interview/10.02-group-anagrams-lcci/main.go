@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-//面试题 10.02. 变位词组
+//interview 10.02. 变位词组
 //https://leetcode-cn.com/problems/group-anagrams-lcci/
 func groupAnagrams(strs []string) [][]string {
 	strMap := make(map[string][]string)
