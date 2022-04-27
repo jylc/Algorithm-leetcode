@@ -27,6 +27,7 @@ type hp struct {
 
 func (h *hp) Push(x interface{})   {}
 func (h *hp) Pop() (_ interface{}) { return }
+
 func main() {
 	nums := []int{24, 5, 64, 53, 26, 38}
 	k := 54
