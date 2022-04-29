@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-//1833. 雪糕的最大数量
+//1833-maximum-ice-cream-bars. 雪糕的最大数量
 //https://leetcode-cn.com/problems/maximum-ice-cream-bars/
 func maxIceCream(costs []int, coins int) int {
 	sort.Ints(costs)
