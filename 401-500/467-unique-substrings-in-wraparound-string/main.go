@@ -24,7 +24,7 @@ func findSubstringInWraproundString(p string) int {
 	return count
 }
 func main() {
-	p := "mnoabzabccb"
+	p := "mnoabz"
 	ans := findSubstringInWraproundString(p)
 	fmt.Println(ans)
 }
