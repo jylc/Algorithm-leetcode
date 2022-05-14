@@ -14,7 +14,7 @@ func oneEditAway(first string, second string) bool {
 	a, b := 0, 0
 	cnt := 1
 	for a < firstN && b < secondN {
-		//如果字符不同，短的字符串退回到上一个字符；
+		//如果字符不同，短的字符串退回到上一个字符
 		if first[a] != second[b] {
 			if length == 1 {
 				b--
