@@ -1,14 +1,16 @@
 package main
 
 import (
+	"bufio"
 	"encoding/base64"
 	"fmt"
+	"os"
 )
 
 func main() {
-	s := "eW8="
-	result, _ := base64.StdEncoding.DecodeString(s)
-	fmt.Println(result)
+	br := bufio.NewReader(os.Stdin)
+	input, _, _ := br.ReadLine()
+	result, _ := base64.StdEncoding.DecodeString(string(input))
 	ans := make([]byte, 0)
 	for {
 		tmp := make([]byte, 0)
@@ -37,5 +39,9 @@ func main() {
 			break
 		}
 	}
-	fmt.Println(string(ans))
+	out := make([]byte, len(ans))
+	for i := len(ans) - 1; i >= 0; i-- {
+		out = append(out, ans[i])
+	}
+	fmt.Println(string(out))
 }

@@ -1,20 +1,30 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-func fib(n int) int {
-	if n == 1 || n == 2 {
-		return 1
+func fib(n int64) int64 {
+	if n < 2 {
+		return n
 	}
-	a, b := 1, 1
-	for i := 0; i < n-2; i++ {
-		a, b = b, a+b
+	p, q, r := int64(0), int64(0), int64(1)
+	for i := int64(2); i <= n; i++ {
+		p = q
+		q = r
+		r = p + q
 	}
-	return b
+	return r
 }
 
 func main() {
-	n := 4
-	ans := fib(n)
-	fmt.Println(ans)
+	for {
+		var num int64
+		_, err := fmt.Scan(&num)
+		if err != nil {
+			break
+		}
+		ans := fib(num)
+		fmt.Printf("%v\n", ans)
+	}
 }
